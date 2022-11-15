@@ -54,7 +54,7 @@ function ShowMenu() {
                                 class = "align-middle"
                                 style = "min-width:90px" >
                                     <img draggable = "false"
-                                        src = "/assets/img/${v[2]}"
+                                        src = "assets/img/${v[2]}"
                                         class = "card-img-top mx-auto p-3" / >
                             </td> 
                             <td class = "w-100" >
