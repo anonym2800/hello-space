@@ -1,0 +1,314 @@
+#content {
+    background-color: #ff9811;
+    max-width: 500px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #f4f2fa;
+    max-width: 500px;
+    margin: auto;
+}
+
+#cart {
+    color: white;
+    margin-left: 70px !important;
+    padding: 2px;
+    max-width: 50px;
+    max-height: 50px;
+    display: inline;
+}
+
+.navbar-btn {
+    width: 36px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.btn-warning {
+    padding: 0;
+}
+
+.notify-custom {
+    min-width: 20px;
+    min-height: 20px;
+    color: var(--N0, #FFFFFF);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    background-color: rgb(239, 20, 74);
+    border: 2px solid var(--N0, rgb(239, 20, 74));
+    border-radius: 18px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    transform: translate(30%, -8%);
+}
+
+#f-bold {
+    font-size: 9px;
+}
+
+.font-weight-bold {
+    color: #2e3142;
+}
+
+#jumbotron {
+    margin-top: 50px;
+    background-image: url('/assets/img/Hello\ Space.\ \(1\).png');
+}
+
+.text-center {
+    font-size: 45px;
+}
+
+#jumbotron-text {
+    color: #2e3142;
+    height: 32vh;
+}
+
+.card {
+    background-color: #f4f2fa;
+}
+
+.card-img-top {
+    max-width: 100px !important;
+}
+
+#about {
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+}
+
+#about-text {
+    color: #2e3142;
+}
+
+.position-relative {
+    background-color: #ff0000;
+    color: #ffffff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    /* display: inline-block; */
+    translate: -15px -13px;
+
+}
+
+.btn-rounded {
+    background-color: #ff9811;
+
+}
+
+.btn-dark {
+    color: white;
+    background-color: #2e3142;
+    border-color: #2e3142;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 500%;
+    /* Full width */
+    height: 500%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    max-width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-header {
+    color: #000;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #ff9811;
+    color: #000;
+    max-height: 200px;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    height: 110px;
+    overflow: scroll;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #ff9811;
+    color: #000;
+    justify-content: flex-start;
+}
+
+.f-bold {
+    font-weight: bold !important;
+}
+
+.div-text {
+    width: 200%;
+    height: 200%;
+}
+
+/* CSS-Modal Total */
+.input-left {
+    padding-left: 3px;
+    color: #1B3265;
+    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: bold !important;
+    line-height: 1.5;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+}
+
+.input-left>svg {
+    margin-top: -3px !important;
+}
+
+.input-left:hover {
+    cursor: pointer;
+}
+
+.input-right {
+    padding-right: 3px;
+    color: #1B3265;
+    padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold !important;
+    line-height: 1.5;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+}
+
+.form-num {
+    color: #1B3265;
+    text-align: center;
+    max-width: 30px !important;
+    border-top: 1px solid #ced4da !important;
+    border-bottom: 1px solid #ced4da !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.form-num:focus-visible {
+    outline: none !important;
+}
+
+.input-right>svg {
+    margin-top: -3px !important;
+}
+
+.input-right:hover {
+    cursor: pointer;
+}
+
+.pill-num {
+    zoom: 90%;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

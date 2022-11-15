@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Space</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/signboard-192.png" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div id="content">
+    <!-- Navbar -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand text-dark f-bold" href="#">
+          <img draggable="false" src="assets/img/signboard-512.png" width="33" height="33"
+            class="d-inline-block align-top" />
+          Hello Space.
+        </a>
+        <a id="cart" type="button">
+          <button id="myBtn" type="button" class="w-30 btn btn-warning btn-rounded">
+            <div class="navbar-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+              <span class="notify-custom" id="CheckOut">
+              </span>
+            </div>
+          </button>
+        </a>
+        <a class="text-dark bar-list" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="text-dark nav-link active" href="#">Home</a>
+            <a class="text-dark nav-link active" href="#about">About</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section id="jumbotron">
+      <div class="container">
+        <div id="jumbotron-text">
+          <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+              <h1 class="text-center">Hello Space.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container p-3 font-weight-bold">
+        Menu
+      </div>
+    </section>
+
+    <!-- Menu with Img -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/cake.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Cake</p>
+                  <p class="card-text m-0 pb-1">Rp 20.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Cake`, 20000 ,'cake.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/coffee-cup.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Coffee</p>
+                  <p class="card-text m-0 pb-1">Rp 25.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Coffee`, 25000,'coffee-cup.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/croffle.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Croffle</p>
+                  <p class="card-text m-0 pb-1">Rp 35.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Croffle`,35000,'croffle.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/drink.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Apple Juice</p>
+                  <p class="card-text m-0 pb-1">Rp 30.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Apple Juice`, 30000, 'drink.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/milkshake.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Milk Shake</p>
+                  <p class="card-text m-0 pb-1">Rp 18.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Milk Shake`, 18000, 'milkshake.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-deck">
+              <div class="card">
+                <img draggable="false" src="/assets/img/pizza.png" class="card-img-top mx-auto p-3" />
+                <div class="card-body pt-0">
+                  <p class="card-title f-bold m-0">Pizza</p>
+                  <p class="card-text m-0 pb-1">Rp 23.000</p>
+                  <button type="button" class="btn btn-dark btn-sm float-right"
+                    onclick="tambah(`Pizza`,23000 ,'pizza.png')">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container about-text">
+        <h4 class="text pt-3">About Hello Space</h4>
+        <p class="text">
+          Kami menyajikan beragam kopi espresso yang terbuat dari biji kopi terbaik, dipanggang di sini di Hello Space,
+          dan barista kami benar-benar mengenal biji kopi mereka. Dengan pengetahuan teknis mereka yang unggul dan
+          hasrat untuk membuat kopi yang luar biasa, mereka akan menjadikan Anda secangkir teh yang sempurna.
+        </p>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex bd-highlight f-bold div-text pt-2 pb-2">
+            <div class="p-2 flex-grow-1 bd-highlight">
+              <span class="text-header w-100">Total Pesanan</span>
+            </div>
+            <div class="p-2 bd-highlight">
+              <span class="close">&times;</span>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Pesanan -->
+        <div class="modal-body" id="list-menu" style="min-height: 250px;">
+        </div>
+
+
+        <div class="div-total modal-footer">
+          <div class="d-flex bd-highlight f-bold div-text pt-2 pb-2">
+            <div class="p-2 flex-grow-1 bd-highlight">
+              <span>Total </span>
+            </div>
+            <div class="p-2 bd-highlight">
+              <span id="grand-total">Rp 0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+  <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/register.js"></script>
+</body>
+
+</html>
